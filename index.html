@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>QR Code Scanner</h1>
+        <p>Scan a QR code using your camera</p>
+
+        <div id="reader"></div>
+
+        <div class="result-box">
+            <h3>Scanned Result</h3>
+            <p id="result">No QR code scanned yet</p>
+        </div>
+
+        <button onclick="startScanner()">Start Scanner</button>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
